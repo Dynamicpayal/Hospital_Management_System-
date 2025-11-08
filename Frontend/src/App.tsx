@@ -1,10 +1,10 @@
 import "@mantine/core/styles.css";
-import { createTheme, MantineProvider, } from "@mantine/core";
+import { createTheme, MantineProvider } from "@mantine/core";
 import AppRoutes from "./Routes/AppRoutes";
 
 const theme = createTheme({
-  fontFamily:"poppins, sana-serif",
-  headings:{fontFamily:"Merriweather, serif"},
+  fontFamily: "poppins, sana-serif",
+  headings: { fontFamily: "Merriweather, serif" },
   colors: {
     // 'dark':"#212529",grey-900
     // 'light':"#F0F3FB",
@@ -51,7 +51,7 @@ function App() {
         <Button variant="gradient">Hello</Button>
         <span>a</span>
       </div> */}
-      <AppRoutes/>
+      <AppRoutes />
     </MantineProvider>
   );
 }
