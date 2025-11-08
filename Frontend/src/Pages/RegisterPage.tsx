@@ -42,24 +42,23 @@ const RegisterPage = () => {
                     placeholder="Email"
                     {...form.getInputProps('email')}
                 />
-                <PasswordInput className='focus-within:[&_.mantine-Input-input]:border-pink-400! transition duration-300'
+                <PasswordInput {...form.getInputProps('password')} className='focus-within:[&_.mantine-Input-input]:border-pink-400! transition duration-300'
                     variant="unstyled"
                     size="md"
                     radius="md"
                     placeholder="Password"
-                    {...form.getInputProps('password')}
+                    
                 />
-                <PasswordInput className='focus-within:[&_.mantine-Input-input]:border-pink-400! transition duration-300'
+                <PasswordInput {...form.getInputProps('confirmPassword')} className='focus-within:[&_.mantine-Input-input]:border-pink-400! transition duration-300'
                     variant="unstyled"
                     size="md"
                     radius="md"
                     placeholder="confirmPassword"
-                    {...form.getInputProps('confirmPassword')}
+                    
                 />
                 <Button type='submit' color='pink' radius="md" size='md'>Register</Button>
                 <div className='text-neutral-100 text-sm self-c'>Have an account? <Link to="/login" className='hover:underline'>Login</Link></div>
         </form>
-            
       </div>
     </div>
   )
